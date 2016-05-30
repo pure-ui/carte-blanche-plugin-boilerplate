@@ -21,10 +21,4 @@
 
 4. Add your project to [Travis CI](https://travis-ci.org).
 
-5. Write some code to `index.js` and tests to `test.js`.
-
-6. Execute `npm test` command
-
-7. Add options descriptions if your plugin has them.
-
-8. Fill `CHANGELOG.md` with initial version and release it to npm.
+5. Fill `CHANGELOG.md` with initial version and release it to npm.
