@@ -18,9 +18,9 @@ var questions = {
     AUTHOR_NAME:  'Your name: ',
     AUTHOR_EMAIL: 'Your email: ',
     GITHUB_NAME:  'GitHub username: ',
-    PLUGIN_NAME:  'Plugin name: postcss-',
-    PLUGIN_DESC:  '\nFinish sentence with plugin description:\nPostCSS plugin ',
-    KEYWORDS:     '\nFinish plugin keywords:\npostcss, css, postcss-plugin, '
+    PLUGIN_NAME:  'Plugin name: styleguide-',
+    PLUGIN_DESC:  '\nPlugin description:\nStyleguide Plugin ',
+    KEYWORDS:     '\nPlugin keywords: '
 };
 var autodetects = {
     AUTHOR_NAME:  'git config user.name',
@@ -126,13 +126,13 @@ function nextQuestion() {
         });
 
     } else {
-        answers.PLUGIN_NAME = 'postcss-' + answers.PLUGIN_NAME;
+        answers.PLUGIN_NAME = 'styleguide-' + answers.PLUGIN_NAME;
         answers.PLUGIN_TITLE = answers.PLUGIN_NAME
             .replace(/-\w/g, function (str) {
                 return ' ' + str[1].toUpperCase();
             })
-            .replace(/^postcss/, 'PostCSS');
-        answers.KEYWORDS = ',\n    ' + answers.KEYWORDS
+            .replace(/^styleguide/, 'Styleguide');
+        answers.KEYWORDS = answers.KEYWORDS
             .split(',')
             .map(function (i) {
                 return '"' + i.trim() + '"';

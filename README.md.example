@@ -1,27 +1,27 @@
 # PLUGIN_TITLE [![Build Status][ci-img]][ci]
 
-[PostCSS] plugin PLUGIN_DESC.
+[Styleguide] plugin PLUGIN_DESC.
 
-[PostCSS]: https://github.com/postcss/postcss
+[Styleguide]: https://github.com/pure-ui/styleguide
 [ci-img]:  https://travis-ci.org/GITHUB_NAME/PLUGIN_NAME.svg
 [ci]:      https://travis-ci.org/GITHUB_NAME/PLUGIN_NAME
-
-```css
-.foo {
-    /* Input example */
-}
-```
-
-```css
-.foo {
-  /* Output example */
-}
-```
 
 ## Usage
 
 ```js
-postcss([ require('PLUGIN_NAME') ])
+var PLUGIN_NAME = require('PLUGIN_NAME')
+
+plugins: [
+  new PLUGIN_NAME({ /* …options… */ })
+]
 ```
 
-See [PostCSS] docs for examples for your environment.
+## Options
+
+- `someVariable`: (default: false) Changes something in the plugin.
+
+  ```JS
+  new PLUGIN_NAME({
+    someVariable: true
+  })
+  ```

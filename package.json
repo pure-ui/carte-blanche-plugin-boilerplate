@@ -1,12 +1,11 @@
 {
   "name": "PLUGIN_NAME",
   "version": "0.0.0",
-  "description": "PostCSS plugin PLUGIN_DESC",
+  "description": "Styleguide plugin PLUGIN_DESC",
   "keywords": [
-    "postcss",
-    "css",
-    "postcss-plugin"KEYWORDS
+    KEYWORDS
   ],
+  "main": "plugin.js",
   "author": "AUTHOR_NAME <AUTHOR_EMAIL>",
   "license": "MIT",
   "repository": "GITHUB_NAME/PLUGIN_NAME",
@@ -15,17 +14,13 @@
   },
   "homepage": "https://github.com/GITHUB_NAME/PLUGIN_NAME",
   "dependencies": {
-    "postcss": "^5.0.21"
+    "react": "^15.0.1"
   },
-  "devDependencies": {
-    "ava": "^0.14.0",
-    "eslint": "^2.10.0",
-    "eslint-config-postcss": "^2.0.2"
+  "peerDependencies": {
+    "atrium-webpack-plugin-beta": "^0.0.0",
+    "webpack": ">=1 <3"
   },
   "scripts": {
-    "test": "ava && eslint *.js"
-  },
-  "eslintConfig": {
-    "extends": "eslint-config-postcss/es5"
+    "test": ""
   }
 }
