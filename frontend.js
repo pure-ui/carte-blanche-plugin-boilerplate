@@ -1,5 +1,5 @@
-import React from 'react';
+var React = require('react');
 
-export default function sourceFrontend(frontendData, data) {
-  return (<pre>{data.someVariable}</pre>);
+module.exports = function sourceFrontend(frontendData, data) {
+  return (React.createElement('pre', { data.someVariable }));
 }
