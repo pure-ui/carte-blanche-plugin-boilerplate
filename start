@@ -18,8 +18,8 @@ var questions = {
     AUTHOR_NAME:  'Your name: ',
     AUTHOR_EMAIL: 'Your email: ',
     GITHUB_NAME:  'GitHub username: ',
-    PLUGIN_NAME:  'Plugin name: styleguide-',
-    PLUGIN_DESC:  '\nPlugin description:\nStyleguide Plugin ',
+    PLUGIN_NAME:  'Plugin name: carte-blanche-',
+    PLUGIN_DESC:  '\nPlugin description:\nCarteBlanche Plugin ',
     KEYWORDS:     '\nPlugin keywords: '
 };
 var autodetects = {
@@ -126,12 +126,12 @@ function nextQuestion() {
         });
 
     } else {
-        answers.PLUGIN_NAME = 'styleguide-' + answers.PLUGIN_NAME;
+        answers.PLUGIN_NAME = 'carte-blanche-' + answers.PLUGIN_NAME;
         answers.PLUGIN_TITLE = answers.PLUGIN_NAME
             .replace(/-\w/g, function (str) {
                 return ' ' + str[1].toUpperCase();
             })
-            .replace(/^styleguide/, 'Styleguide');
+            .replace(/^carte-blanche/, 'CarteBlanche');
         answers.KEYWORDS = answers.KEYWORDS
             .split(',')
             .map(function (i) {

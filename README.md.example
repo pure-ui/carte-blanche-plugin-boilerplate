@@ -1,8 +1,8 @@
 # PLUGIN_TITLE [![Build Status][ci-img]][ci]
 
-[Styleguide] plugin PLUGIN_DESC.
+[CarteBlanche] plugin PLUGIN_DESC.
 
-[Styleguide]: https://github.com/pure-ui/styleguide
+[CarteBlanche]: https://github.com/pure-ui/carte-blanche
 [ci-img]:  https://travis-ci.org/GITHUB_NAME/PLUGIN_NAME.svg
 [ci]:      https://travis-ci.org/GITHUB_NAME/PLUGIN_NAME
 

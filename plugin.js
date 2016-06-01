@@ -1,7 +1,7 @@
 /**
  * PLUGIN_NAME
  *
- * Styleguide plugin PLUGIN_DESC
+ * CarteBlanche plugin PLUGIN_DESC
  */
 
 function PLUGIN_NAME(options) {
@@ -19,12 +19,12 @@ PLUGIN_NAME.prototype.apply = function apply(compiler) {
     var options = this.options;
     compiler.plugin('compilation', function(compilation) {
         // Called before processing the components, mutate data to pass it around
-        compilation.plugin('styleguide-plugin-before-processing', function(data) {
+        compilation.plugin('carte-blanche-plugin-before-processing', function(data) {
             data.someVariable = options.someVariable;
         });
         // Called after the processing, gets the renderToClient API to visually
         // render something in the client area
-        compilation.plugin('styleguide-plugin-processing', function(renderToClient) {
+        compilation.plugin('carte-blanche-plugin-processing', function(renderToClient) {
           renderToClient({
                 name: 'PLUGIN_NAME',
                 frontendData: { options: options },

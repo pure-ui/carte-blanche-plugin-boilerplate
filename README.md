@@ -1,18 +1,18 @@
-# Styleguide Plugin Boilerplate
+# CarteBlanche Plugin Boilerplate
 
-Сreate new Styleguide plugins in a few steps:
+Сreate new CarteBlanche plugins in a few steps:
 
 1. Clone this repository:
 
    ```sh
-  git clone https://github.com/pure-ui/styleguide-plugin-boilerplate.git
+  git clone https://github.com/pure-ui/carte-blanche-plugin-boilerplate.git
    ```
 
 2. Execute the wizard script. It will ask you a few questions
    and fill all files with your data.
 
     ```sh
-   node ./styleguide-plugin-boilerplate/start
+   node ./carte-blanche-plugin-boilerplate/start
     ```
 
 3. Your plugin repository will now have a clean Git history.
